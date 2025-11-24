@@ -23,7 +23,7 @@ export function UploadForm({ onUploadSuccess }: UploadFormProps) {
     setMessage(null);
 
     try {
-      const response = await fetch('http://localhost:5000/api/artworks', {
+      const response = await fetch('/api/artworks', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

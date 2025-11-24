@@ -13,8 +13,8 @@ export function ArtworkGallery() {
       setLoading(true);
       setError(null);
       
-      // Fetching from your local backend
-      const response = await fetch('http://localhost:5000/api/artworks');
+      // Fetching from your backend
+      const response = await fetch('/api/artworks');
       
       if (!response.ok) {
         throw new Error('Failed to connect to the server');
